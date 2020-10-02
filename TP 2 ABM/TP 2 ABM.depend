@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1601671363 source:c:\users\thomas pc\onedrive\desktop\tps\tp 1\tp 2 abm\funcionespunteros.c
+	"FuncionesPunteros.h"
+
+1601671043 c:\users\thomas pc\onedrive\desktop\tps\tp 1\tp 2 abm\funcionespunteros.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1601671206 source:c:\users\thomas pc\onedrive\desktop\tps\tp 1\tp 2 abm\main.c
+	<stdlib.h>
+	"Empleados.h"
+
+1601671363 c:\users\thomas pc\onedrive\desktop\tps\tp 1\tp 2 abm\empleados.h
+	<stdio.h>
+	<string.h>
+	"FuncionesPunteros.h"
+
+1601671507 source:c:\users\thomas pc\onedrive\desktop\tps\tp 1\tp 2 abm\empleados.c
+	"Empleados.h"
+
+1601671507 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\empleados.c
+	"Empleados.h"
+
+1601671363 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\empleados.h
+	<stdio.h>
+	<string.h>
+	"FuncionesPunteros.h"
+
+1601671043 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\funcionespunteros.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1601671363 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\funcionespunteros.c
+	"FuncionesPunteros.h"
+
+1601671735 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\main.c
+	<stdlib.h>
+	"Empleados.h"
+
