@@ -191,3 +191,47 @@
 1604716213 source:c:\users\thomas pc\onedrive\desktop\tp 3 punteros\tp3_cascara\win_64\utn.c
 	"utn.h"
 
+1604863984 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"utn.h"
+
+1604863984 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\linkedlist.h
+
+1604863984 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\employee.h
+
+1604863984 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\parser.h
+
+1604863984 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\utn.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1604863984 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\employee.c
+	<stdlib.h>
+	"Employee.h"
+	<string.h>
+
+1604863984 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1604863984 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\utn.c
+	"utn.h"
+
+1604864048 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"utn.h"
+	"Employee.h"
+
+1604863984 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 3 punteros\tp3_cascara\win_64\controller.h
+

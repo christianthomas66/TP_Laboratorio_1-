@@ -26,11 +26,12 @@ int main()
     int flagCsv = 0;
     int flagBin = 0;
     char salir[3];
+    char aux;
     LinkedList* listaEmpleados = ll_newLinkedList();
 
     do
     {   strcpy(salir,"no");
-        getInt("1-cargar empleados del archivo .csv\n2-cargar empleados del archivo .bin\n3-cargar nuevo empleado\n4-editar empleado\n5-eliminar empleado\n6-listar empleados\n7-ordenar empleados\n8-guardar archivo csv\n9-guardar archivo bin \n10-salir\n","error\n",1,3,0,&opcion);
+        getInt("1) Cargar los datos de los empleados desde el archivo data.csv (modo texto)\n2) Cargar los datos de los empleados desde el archivo data.csv (modo binario)\n3) Alta empleado\n4) Modificar empleado\n5) Baja empleado\n6) Listar empleados\n7) Ordenar empleados\n8) Guardar los datos de los empleados en el archivo data.csv (modo texto)\n9) Guardar los datos de los empleados en el archivo data.csv (modo binario)\n10) Salir\n","Error\n", 1, 3, 0, &opcion);
         switch(opcion)
         {
         case 1:
@@ -137,17 +138,27 @@ int main()
             system("pause");
             break;
         case 10:
-            getName("esta seguro que desea salir?(si) los datos no guardados seran borrados\n","error\n",1,3,0,salir);
-           if(strcmp(salir,"si"))
-           {
-               ll_deleteLinkedList(listaEmpleados);
-           }
+                printf("Los datos no seran guardados\n Seguro que desea salir? ");
+                fflush(stdin);
+                scanf("%c", &aux);
+                while(aux != 's' && aux != 'n')
+                    {
+                        printf("Opcion incorrecta. Reingrese 's'(si) o 'n'(no)");
+                        printf(" s/n : \n");
+                        fflush(stdin);
+                        scanf("%c", &aux);
+                    }
 
-
+                if(aux == 's')
+                    {
+                        ll_deleteLinkedList(listaEmpleados);
+                        printf("Gracias. Vuelva pronto!!!\n");
+                        return 0;
+                    }
             break;
         default:
-            printf("Opcion invalida\n");
-            break;
+            printf("Opcion incorrecta. Reingrese\n");
+            system("pause");
         }
 
         system("cls");
