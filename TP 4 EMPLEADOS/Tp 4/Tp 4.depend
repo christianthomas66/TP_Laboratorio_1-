@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1606401794 source:c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Empleados.h"
+	"parser.h"
+	"utn.h"
+
+1606401925 c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\linkedlist.h
+
+1606401047 c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\empleados.h
+	"LinkedList.h"
+
+1606401986 c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\parser.h
+
+1606401642 c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\utn.h
+
+1606401687 source:c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\empleados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Empleados.h"
+	"utn.h"
+
+1606401948 source:c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1606402014 source:c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Empleados.h"
+
+1606402060 source:c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Empleados.h"
+	"utn.h"
+
+1606401805 c:\users\thomas pc\onedrive\desktop\tp 4 empleados\tp 4\controller.h
+
