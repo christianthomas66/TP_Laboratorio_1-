@@ -19,23 +19,23 @@
 1601671507 source:c:\users\thomas pc\onedrive\desktop\tps\tp 1\tp 2 abm\empleados.c
 	"Empleados.h"
 
-1601671507 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\empleados.c
+1652714501 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\empleados.c
 	"Empleados.h"
 
-1601671363 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\empleados.h
+1651792226 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\empleados.h
 	<stdio.h>
 	<string.h>
 	"FuncionesPunteros.h"
 
-1601671043 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\funcionespunteros.h
+1651238313 c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\funcionespunteros.h
 	<stdio.h>
 	<string.h>
 	<stdlib.h>
 
-1601671363 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\funcionespunteros.c
+1652155279 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\funcionespunteros.c
 	"FuncionesPunteros.h"
 
-1601671735 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\main.c
+1652733532 source:c:\users\thomas pc\onedrive\desktop\tp_laboratorio_1-\tp 2 abm\main.c
 	<stdlib.h>
 	"Empleados.h"
 

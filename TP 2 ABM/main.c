@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include "Empleados.h"
-#define T 1000
+#define TAM 1000
 
 int main()
 {
-    Employee empleados[T];
+    Employee empleados[TAM];
     int opcion;
     int estado;
     int id=100;
@@ -15,7 +15,9 @@ int main()
     int baja;
     int modificar;
 
-    initEmployees(empleados,T);
+    initEmployees(empleados, TAM);
+
+    //Employee empleado1[TAM] = {1, "thomas", "suarez", 1000, 1, 2};
 
     do
     {
@@ -35,8 +37,8 @@ int main()
             getName("ingrese apellido: \n","error\n",4,20,10,lastName);
             getFloat("ingrese salario: \n","error\n",4,8,10,&salary);
 
-            estado = addEmployee(empleados,T,id,name,lastName,salary,sector);
-            if (estado == 0)
+            estado = addEmployee(empleados,TAM,id,name,lastName,salary,sector);
+            if(estado == 0)
             {
                 printf("se cargo el usuario");
                 id++;
@@ -48,13 +50,13 @@ int main()
             break;
 
         case 2 :
-            if (estado== 0)
+            if(estado== 0)
             {
-                printEmployees(empleados,T);
+                printEmployees(empleados,TAM);
                 printf("ingrese id que desea Modificar: \n");
                 scanf("%d",&modificar);
-                modificar = modificarEmployee(empleados,T,modificar);
-                if (modificar == 0)
+                modificar = modificarEmployee(empleados,TAM,modificar);
+                if(modificar == 0)
                 {
                     printf("se modifico el usuario");
                     id++;
@@ -75,10 +77,10 @@ int main()
         case 3 :
             if (estado == 0)
             {
-                printEmployees(empleados,T);
+                printEmployees(empleados,TAM);
                 printf("ingrese id que desea dar de baja: \n");
                 scanf("%d",&baja);
-                baja = removeEmployee(empleados,T,baja);
+                baja = removeEmployee(empleados,TAM,baja);
                 if (baja == 0)
                 {
                     printf("se dio de baja el usuario");
@@ -98,13 +100,14 @@ int main()
         case 4 :
             if (estado == 0)
             {
-                printf("*****listado******\n");
-                printEmployees (empleados,T);
+                printf("\t*****listado******\n");
+                printEmployees (empleados, TAM);
+                //printf("empleado1", empleado1);
                 printf("*****listado ordenano de manera ascendente******\n");
-                sortEmployeeByNameAndAverage(empleados,T);
-                printEmployees (empleados,T);
+                sortEmployeeByNameAndAverage(empleados,TAM);
+                printEmployees (empleados,TAM);
                 printf("*****salarios******\n");
-                mostrarSalaryPromedioSuperiorPromedio(empleados,T);
+                mostrarSalaryPromedioSuperiorPromedio(empleados,TAM);
             }
 
             else
@@ -122,15 +125,11 @@ int main()
         default :
             printf("Opcion incorrecta!!!\n");
 
-
         }
-
         system("pause");
         system("cls");
     }
     while (opcion != 5);
-
-
     return 0;
 }
 

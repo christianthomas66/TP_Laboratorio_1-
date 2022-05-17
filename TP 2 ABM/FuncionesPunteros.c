@@ -118,8 +118,6 @@ int isValidNumber(char* stringRecibido)
     return retorno;
 }
 
-
-
 int getFloat(char* msg, char* msgError, int minSize, int maxSize, int reintentos, float* input)
 {
     int retorno=-1;

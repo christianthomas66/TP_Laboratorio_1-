@@ -17,7 +17,7 @@ int main()
     int factorial_2;
 
     int flag1 = 0;
-    int flag2 = 0;
+    int flag2 = 0; // Variables bandera para activar opciones
     int flag3 = 0;
 
     char seguir = 's';
@@ -36,12 +36,12 @@ int main()
             printf(" 5. Calcular Factorial (A!) y (B!)\n");
             printf("D) Informar operaciones: \n");
             printf("E) SALIR\n");
-            fflush(stdin);
+            fflush(stdin);  //Limpio el buffer
             scanf("%c", &opcion);
-            opcion = tolower(opcion);
+            opcion = tolower(opcion); // convierto la opcion elegida para que sea ingresada tanto con minuscula como mayuscula
 
 
-            switch(opcion)
+            switch(opcion)  //hago un switch para manejar distintas opciones
             {
             case 'a':
 
@@ -51,7 +51,7 @@ int main()
                 flag1 = 1;
                 break;
             case 'b':
-                if(flag1)
+                if(flag1) // Si no ingresé el primer operando, esta opcion estará bloqueada y entrará al else de este case
                     {
                         printf("Ingrese el 2do operando: \n");
                         fflush(stdin);
@@ -66,10 +66,10 @@ int main()
 
                 break;
             case 'c':
-                if(flag2 && flag1)
+                if(flag2 && flag1) // Si no ingresé a las 2 primeras opciones(los operandos) esta opcion estará bloqueada y entrará al else de este case
                     {
                         printf("Operaciones calculadas con exito\n");
-                        suma = sumar(valorA, valorB);
+                        suma = sumar(valorA, valorB); // llamo a las funciones y les paso los parametros por valor
                         resta = restar(valorA, valorB);
                         division = dividir(valorA, valorB);
                         multiplicacion = multiplicar(valorA, valorB);
@@ -84,11 +84,11 @@ int main()
 
                 break;
             case 'd':
-                if(flag3)
+                if(flag3) // Si no entraa ninguna de las opciones(case a,b o c), esta opcion estará bloqueada y entrará al else hasta que no se ingresen los operandos, ni se haya calculado
                     {
                         printf("La suma es: %d\n", suma);
                         printf("La resta es: %d\n", resta);
-                        if(valorB == 0)
+                        if(valorB == 0) // Si el 2do operando es 0, no se puede realizar una division por 0, y si no, entrará al else y hará una division normal
                         {
                             printf("no se puede dividir por cero\n");
                         }
@@ -98,7 +98,7 @@ int main()
                         }
                         printf("La multiplicacion es: %d\n", multiplicacion);
 
-                        if(valorA < 0 && valorB < 0)
+                        if(valorA < 0 && valorB < 0) // Si los valores de los operandos son 0 no se puede realizar factorial, caso contrario entrará al else y calculará el factorial normal de ambos operandos
                         {
                             printf("No se puede realizar el factorial de 0\n");
                         }
@@ -118,7 +118,7 @@ int main()
                 printf("Desea salir???\n");
                 fflush(stdin);
                 scanf("%c", &aux);
-                while(aux != 's' && aux != 'n')
+                while(aux != 's' && aux != 'n') // Mientras la opcion de tipo char no sean ni las letras 's' o 'n' la iteracion se ejecutará con el mensaje de manera infinita
                     {
                         printf("Opcion incorrecta. Reingrese 's'(si) o 'n'(no)");
                         printf(" s/n : \n");
@@ -126,23 +126,23 @@ int main()
                         scanf("%c", &aux);
                     }
 
-                if(aux == 's')
+                if(aux == 's') // si la opcion es 's' termina el programa
                     {
                         printf("Gracias. Vuelva pronto!!!\n");
                         return 0;
                     }
                 break;
-            default:
+            default: // si el usuario ingresa cualquier cosa que no sean las opciones indicadas de los cases, entrará al default y muestra el mensaje
                 fflush(stdin);
                 printf("Opcion incorrecta. Reingrese\n");
 
             }
-            system("pause");
-            system("cls");
+            system("pause");// Tiempo de espera luego de ejecutar una opcion
+            system("cls"); // Limpio la pantalla despues de haber ejecutado una opcion
 
 
 
-    }while(seguir == 's');
+    }while(seguir == 's'); //
 
     return 0;
 }
